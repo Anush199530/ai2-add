@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="with=device-width,initial-scale=1.0" />
+  <link rel="stylesheet" href="src/index.css" />
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <title>AI recepy generator</title>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Welcome to this amazing AI recepy generator</h1>
+      </header>
+      <main>
+        <div class="from-container">
+          <form id="recepy-generator-form">
+            <input
+              type="text"
+              placeholder="Enter the products that you want to use"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="user-ingredients"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="ingredients-examples">
+            i.e: chocolate, banana, cheese, etc..
+          </div>
+        </div>
+        <div class="recepy-instruction hidden" id="recepy-ingredients"></div>
+      </main>
+      <footer>
+        This project was coded by Anush Arutunian and is
+        <a href="https://github.com/Anush199530/ai-add" target="_blank">
+          open-sourced on github</a
+        >
+        and is
+        <a href="https://ai-add.vercel.app/" target="_blank"
+          >hosted on Vercel</a
+        >
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
